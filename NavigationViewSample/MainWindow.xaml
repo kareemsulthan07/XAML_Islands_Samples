@@ -1,0 +1,18 @@
+﻿<Window x:Class="NavigationViewSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NavigationViewSample"
+        xmlns:xamlHost="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
+        WindowState="Maximized">
+    <Grid>
+        <xamlHost:WindowsXamlHost x:Name="Host"
+                                  InitialTypeName="Windows.UI.Xaml.Controls.NavigationView"
+                                  ChildChanged="Host_ChildChanged"/>
+    </Grid>
+</Window>
