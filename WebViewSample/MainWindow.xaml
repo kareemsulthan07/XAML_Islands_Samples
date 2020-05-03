@@ -10,7 +10,7 @@
         Height="450" 
         Width="800"
         WindowState="Maximized">
-    <Grid>
+    <Grid x:Name="gd">
         <controls:WebView Source="https://www.youtube.com"/>
     </Grid>
 </Window>

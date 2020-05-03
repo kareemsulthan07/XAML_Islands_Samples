@@ -1,0 +1,19 @@
+﻿<Window x:Class="PivotSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls"
+        xmlns:xamlHost="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"
+        xmlns:local="clr-namespace:PivotSample"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
+        WindowState="Maximized">
+    <Grid>
+        <xamlHost:WindowsXamlHost x:Name="host"
+                                  InitialTypeName="Windows.UI.Xaml.Controls.Pivot"
+                                  ChildChanged="host_ChildChanged"/>
+    </Grid>
+</Window>

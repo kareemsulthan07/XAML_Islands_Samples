@@ -23,6 +23,8 @@ namespace WebViewSample
         public MainWindow()
         {
             InitializeComponent();
+
+            gd.Children.Add(new Microsoft.Toolkit.Wpf.UI.Controls.WebView() { Source = new Uri("https://www.youtube.com") });
         }
     }
 }
