@@ -15,6 +15,6 @@ namespace WPF_MapControl
     public partial class App : Application
     {
         public static string token => 
-            "Paste_Your_Bing_Map_Service_Token";
+            "Paste_Your_Bing_Map_Service_Token_Here";
     }
 }
